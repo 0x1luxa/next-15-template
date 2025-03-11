@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
-import { Geist, Geist_Mono } from 'next/font/google'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 import './globals.css'
 import Providers from './providers'
-import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
